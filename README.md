@@ -2,7 +2,7 @@ connectionmaya
 ==============
 
 
-实时显示maya输出
+SubLime 实时显示maya输出
 
 
     # -*- coding:utf-8 -*-
