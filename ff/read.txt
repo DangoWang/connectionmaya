@@ -1,0 +1,27 @@
+# -*- coding:utf-8 -*-
+import maya.cmds as cmds
+def commandport():
+    try:
+        cmds.commandPort(name=":7001", close=True)
+    except:
+        cmds.warning(
+            'Could not close port 7001 (maybe it is not opened yet...)')
+    try:
+        cmds.commandPort(name=":7002", close=True)
+    except:
+        cmds.warning(
+            'Could not close port 7002 (maybe it is not opened yet...)')
+
+    # Open new ports
+    cmds.commandPort(name=":7001", sourceType="mel")
+    cmds.commandPort(name=":7002", sourceType="python")
+
+cmds.evalDeferred('commandport()')
+
+# ================================================
+# 上面 加到 userSetup.py里
+# 快捷键是 Ctrl + f5 or Tools菜单下jonn_connectionToMaya
+# 如果重起了sublime  Ctrl + f6 or Tools菜单下jonn_ReconnectionToMaya
+# jonn_ReconnectionToMaya 不可执行多次 
+# ctrl+` 显示sublime面板
+#  ================================================

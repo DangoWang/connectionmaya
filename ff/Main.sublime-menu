@@ -1,0 +1,20 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "Jonn_ConnectionToMaya",
+                "id": "connectionmaya",
+                "command": "connectionmaya"
+            },
+            {
+                "caption": "Jonn_ReConnectionToMaya",
+                "id": "reconnectionmaya",
+                "command": "reconnectionmaya"
+            }            
+        ]
+
+    }
+
+]

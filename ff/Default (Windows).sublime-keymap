@@ -1,0 +1,6 @@
+[
+
+ { "keys": ["ctrl+f5"], "command": "connectionmaya" },
+ { "keys": ["ctrl+f6"], "command": "reconnectionmaya" }
+
+]
